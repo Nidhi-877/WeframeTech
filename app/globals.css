@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  box-sizing: border-box;
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: "Cairo";
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.headers{
+  background-color: rgba(21, 19, 43, 1);
+}
+
+.b-border{
+  border: 1px solid black;
+}
+.bp-border{
+  background-color: rgba(227, 40, 175, 1);;
+}
+.btn-blue{
+  background-color: rgba(100, 24, 195, 1)
+}
+.btn-black{
+  background-color:rgba(21, 19, 43, 1);
+  border: 1px solid rgba(120, 121, 241, 1);
+}
+.hwidth{
+  width: 80vw;
+
+}
+.navbar-main{
+   
+ 
+  background-color:rgba(13, 11, 33, 1)
+}
+.navbar{
+  height: 120px;
+ 
+  background-color: rgba(21, 19, 43, 1);
+}
+.search-bar input{
+  width: 100%;
+  height: 50px;
+  background-color: rgba(33, 26, 117, 1);
+  border-radius: 46px;
+  padding-left: 50px;
+
+}
+.search-bar input::placeholder{
+ position: absolute;
+ left: 4rem;
+}
+.other-menu{
+  color:rgba(100, 24, 195, 1) ;
+  font-size: 16px;
+  width: 220px;
+}
+.color-primary{
+  background: rgba(33, 26, 117, 1);
+}
+.color-icon-primary{
+ color: rgba(100, 24, 195, 1)
+}
+.color-secondary{
+  color: rgba(120, 121, 241, 1)
+}
+.search-box{
+  color: rgba(33, 26, 117, 1)
+}
+.nav-badges {
+ position: relative;
+ top: -10px;
+ margin-left: -10px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(94, 207, 255, 1);
+  color: rgb(14, 13, 13);
+  border-radius: 30px;
+ 
+}
+.nav-badge-pink{
+  position: relative;
+  top: -10px;
+  margin-left: -10px;
+  
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 20px;
+   height: 20px;
+   background-color: rgba(227, 40, 175, 1);
+   color: rgb(14, 13, 13);
+   border-radius: 30px;
+}
+.nav-icons span{
+  display: flex;
+margin: 10px;
+align-items: center;
+}
+.inactive-contact{
+  color: rgba(70, 67, 102, 1);
+}
+.usermenu{
+  border-left: 2px solid rgba(30, 28, 58, 1);
+  width: 250px;
+ 
+}
+
+.to-do-list{
+  width: 180px;
+}
+.card{
+  width: 220px;
+  
+}
+.card-hight{
+  height: 170px;
+}
+.movehere{
+ background-color: rgba(21, 19, 43, 1);
+ color: rgba(120, 121, 241, 1);
+  border: 2px solid rgba(120, 121, 241, 1) ;
+  border-style: dotted;
+  height: 50px;
+  width: 100%;
+
+}
+.process-items{
+  width: 100%;
+}
+.disable-btn{
+  background-color:rgba(33, 26, 117, 1) ;
+  color: rgba(100, 24, 195, 1);
+}
+.tiled{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.sidebar{
+  width:24%;
+  
+  background-color: rgba(21, 19, 43, 1)
+}
+.header{
+height: 120px;
+
+}
+.menus{
+  margin-left: 51px;
+
+}
+.sideshadow{
+  -webkit-box-shadow: 6px 0px 18px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 0px 18px -10px rgba(0,0,0,0.75);
+  box-shadow: 6px 0px 18px -10px rgba(0,0,0,0.75);
+}
+.menus p{
+  color: rgba(120, 121, 241, 1);
+  font-size: 18px;
+  font-family: "Cairo";
+  line-height: 33.73px;
+}
+.menus p ul{
+  margin-left: 1.3rem;
+}
+.email-vector{
+ 
+  width: 6px;
+  height: 12px;
+  border: 2px ;
+  transform: rotate(90deg);
+}
+
+.badges {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+  background-color: rgba(94, 207, 255, 1);
+  color: white;
+  border-radius: 30px;
+  font-weight: small;
+}
+.badge-new{
+  width: 63px;
+  background-color: rgba(227, 40, 175, 1);
+  color: white;
+  border-radius: 30px;
+}
+
+.add-side{
+  display: flex;
+  flex-direction:column;
+  background-color:rgba(7, 110, 205, 1);
+  width: 90%;
+  height:180px;
+  border-radius:32px;
+  text-align:center;
+justify-content:center;
+
+}
+.add-side h3{
+  font-weight:700;
+  font-size:23px;
+  line-height:34px;
+}
+.gradient{
+  background: linear-gradient(to right,rgba(160, 249, 255, 0.306), rgba(160, 249, 255, 0.12));
+  border-radius:100% ;
+  bottom: -12%;
+  right: -12%;
+}
+.move-card{
+  border: 7px solid rgba(33, 26, 117, 1);
+}
+
+.dots{
+  margin-top: -14px;
+}
+.active{
+  border-right: 6px solid rgba(100, 24, 195, 1);
+  border-radius: 2px;
+}
+
