@@ -53,7 +53,7 @@ const Header = () => {
               </div>
             </div>
             <div>
-              <button className="btn-blue h-7 px-2 w-32 rounded-lg flex items-center">
+              <button className="btn-blue h-7  w-32 rounded-lg flex items-center">
                 <MdPersonAddAlt1 className="mr-2" />
                 Invite People
               </button>
